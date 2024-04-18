@@ -10,5 +10,7 @@ public class Main {
         System.out.println("Carregar partida");
         System.out.println("Configuració");
         System.out.println("Sortir");
+
+        String opcion = sc.nextLine();
     }
 }
