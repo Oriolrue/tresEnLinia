@@ -3,8 +3,12 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
         Scanner sc = new Scanner(System.in);
         sc.useLocale(Locale.ENGLISH);
+
+        System.out.println("Nova partida");
+        System.out.println("Carregar partida");
+        System.out.println("Configuració");
+        System.out.println("Sortir");
     }
 }
