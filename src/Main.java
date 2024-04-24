@@ -6,6 +6,5 @@ public class Main  extends TUI{
         Scanner sc = new Scanner(System.in);
         sc.useLocale(Locale.ENGLISH);
 
-
     }
 }

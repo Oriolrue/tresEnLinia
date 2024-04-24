@@ -12,6 +12,7 @@ public class Juego {
 
     public static void nuevaPartida(){
 
+
     }
     public static void jugar(short fila, String columna){
 
