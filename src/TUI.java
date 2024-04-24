@@ -4,6 +4,7 @@ import java.util.Scanner;
 public class TUI {
     static Scanner sc = new Scanner(System.in);
 
+
     public static void mostrarTablero(char tablero, short turno){
 
     }
