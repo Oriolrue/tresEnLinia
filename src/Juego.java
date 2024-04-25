@@ -1,3 +1,5 @@
+import sun.reflect.generics.reflectiveObjects.NotImplementedException;
+
 public class Juego{
     private char tablero;
     private short turno;
@@ -10,14 +12,13 @@ public class Juego{
         return turno;
     }
 
-    public static void nuevaPartida(){
-
-
+    public void nuevaPartida(){
+        throw new NotImplementedException();
     }
     public static void jugar(short fila, String columna){
-
+        throw new NotImplementedException();
     }
     public static boolean jugadaGanadora(short fila, short columna){
-        return false;
+        throw new NotImplementedException();
     }
 }

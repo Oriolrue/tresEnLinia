@@ -1,3 +1,5 @@
+import sun.reflect.generics.reflectiveObjects.NotImplementedException;
+
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -5,13 +7,13 @@ public class TUI{
     static Scanner sc = new Scanner(System.in);
 
     public static void mostrarTablero(char tablero, short turno){
-
+        throw new NotImplementedException();
     }
     public static short recogerJugada(){
-        return 0;
+        throw new NotImplementedException();
     }
     public static void finDePartida(short ganador){
-
+        throw new NotImplementedException();
     }
 
     public static int mostrarMenu(){
