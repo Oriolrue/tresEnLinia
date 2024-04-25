@@ -1,4 +1,4 @@
-public class Juego {
+public class Juego{
     private char tablero;
     private short turno;
 
