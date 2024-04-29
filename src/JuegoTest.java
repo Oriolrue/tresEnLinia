@@ -1,3 +1,5 @@
+import org.junit.jupiter.api.Assertions;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class JuegoTest {
@@ -8,5 +10,7 @@ class JuegoTest {
 
     @org.junit.jupiter.api.Test
     void jugar() {
+        Juego j = new Juego();
+        Assertions.assertEquals("x", j.getTablero());
     }
 }
