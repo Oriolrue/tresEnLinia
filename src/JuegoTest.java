@@ -8,7 +8,7 @@ class JuegoTest {
     void nuevaPartida() {
         Juego j = new Juego();
         Assertions.assertEquals(1, j.getTurno());
-        Assertions.assertEquals(' ', j.getTablero());
+        Assertions.assertEquals('-', j.getTablero());
     }
 
     @org.junit.jupiter.api.Test
