@@ -4,6 +4,7 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class TUI{
+    static Juego j = new Juego();
     static Scanner sc = new Scanner(System.in);
 
     public static void mostrarTablero(char tablero, short turno){
@@ -33,7 +34,9 @@ public class TUI{
                 case 1:
                     System.out.println(" ");
                     System.out.println("Se ha escogido nueva partida");
-                    break;
+                    j.nuevaPartida();
+
+                    return 0;
                 case 2:
                     System.out.println(" ");
                     System.out.println("Se ha escogido cargar partida");

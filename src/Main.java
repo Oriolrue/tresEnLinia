@@ -9,7 +9,8 @@ public class Main{
         TUI TUI = new TUI();
         Juego Juego = new Juego();
 
-        //TUI.mostrarMenu();
-        Juego.nuevaPartida();
+        TUI.mostrarMenu();
+
+
     }
 }
