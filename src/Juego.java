@@ -1,24 +1,37 @@
 import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
-public class Juego{
-    private char tablero;
-    private short turno;
+import java.util.Scanner;
 
-    public char getTablero() {
+public class Juego{
+    Scanner sc = new Scanner(System.in);
+
+    private char[][] tablero = {
+            {'-','-','-'},{'-','-','-'},{'-','-','-'}
+    };
+    private int turno;
+
+    public char[][] getTablero() {
         return tablero;
     }
 
-    public short getTurno() {
+    public int getTurno() {
         return turno;
     }
 
     public void nuevaPartida(){
-        throw new NotImplementedException();
+
+        for (int i = 0; i < tablero.length; i++) {
+            for (int j = 0; j < tablero.length; j++) {
+                System.out.print("[" + tablero[i][j] + "]");
+            }
+            System.out.println();
+        }
+        turno = 1;
     }
-    public static void jugar(short fila, String columna){
-        throw new NotImplementedException();
+    public static void jugar(int fila, int columna){
+        
     }
-    public static boolean jugadaGanadora(short fila, short columna){
+    public static boolean jugadaGanadora(int fila, int columna){
         throw new NotImplementedException();
     }
 }
