@@ -5,13 +5,18 @@ import java.util.Scanner;
 public class Juego{
     Scanner sc = new Scanner(System.in);
 
-    private char[][] tablero = {{'-','-','-'},{'-','-','-'},{'-','-','-'}};
+    private char[][] tablero;
     private int turno;
 
     public char[][] getTablero() {return tablero;}
 
     public int getTurno() {
         return turno;
+    }
+
+    public Juego(){
+        this.tablero = new char[][]{{'-','-','-'},{'-','-','-'},{'-','-','-'}};
+        nuevaPartida();
     }
 
     public void nuevaPartida(){
