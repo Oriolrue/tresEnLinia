@@ -20,12 +20,10 @@ public class Juego{
     }
 
     public void nuevaPartida(){
-
         for (int i = 0; i < tablero.length; i++) {
             for (int j = 0; j < tablero.length; j++) {
-                System.out.print("[" + tablero[i][j] + "]");
+                tablero[i][j] = '_';
             }
-            System.out.println();
         }
         turno = 1;
     }
