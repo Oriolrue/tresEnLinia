@@ -6,7 +6,8 @@ class JuegoTest {
     void nuevaPartida() {
         Juego j = new Juego();
         char[][] matrix = {{'-','-','-'}, {'-','-','-'}, {'-','-','-'}};
-        //Assertions.assertEquals(matrix,j.getTablero());
+
+        Assertions.assertArrayEquals(matrix,j.getTablero());
         Assertions.assertEquals(1, j.getTurno());
     }
 
