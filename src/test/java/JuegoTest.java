@@ -15,6 +15,7 @@ class JuegoTest {
     void jugar() {
         Juego j = new Juego();
         char[][] matrix = {{'-','-','-'}, {'-','-','-'}, {'-','-','-'}};
+        //Hay que cambiar la prueba unitaria, en el expected poner la matriz y en el actual llamar a getTablero().
         Assertions.assertEquals('x', matrix[0][0] = 'x');
     }
 }
