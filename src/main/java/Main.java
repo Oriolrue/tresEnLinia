@@ -6,10 +6,11 @@ public class Main{
         Scanner sc = new Scanner(System.in);
         sc.useLocale(Locale.ENGLISH);
 
-        TUI TUI = new TUI();
+        TUI t = new TUI();
         Juego Juego = new Juego();
 
-        //TUI.mostrarMenu();
+        //t.mostrarMenu();
+
 
 
     }

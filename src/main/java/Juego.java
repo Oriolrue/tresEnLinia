@@ -22,7 +22,7 @@ public class Juego{
     public void nuevaPartida(){
         for (int i = 0; i < tablero.length; i++) {
             for (int j = 0; j < tablero.length; j++) {
-                tablero[i][j] = '_';
+                tablero[i][j] = ' ';
             }
         }
         turno = 1;
