@@ -8,7 +8,7 @@ public class Juego{
     private char[][] tablero;
     private int turno;
 
-    public char[][] getTablero() {return tablero;}
+    public char[][] getTablero(char[] chars) {return tablero;}
 
     public int getTurno() {
         return turno;
