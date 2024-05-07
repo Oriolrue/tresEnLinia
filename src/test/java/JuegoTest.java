@@ -13,6 +13,7 @@ class JuegoTest {
     @org.junit.jupiter.api.Test
     void jugar() {
         Juego j = new Juego();
-        //Assertions.assertEquals("x", j.getTablero());
+        char[][] matrix = {{'-','-','-'}, {'-','-','-'}, {'-','-','-'}};
+        Assertions.assertEquals('x', matrix[0][0] = 'x');
     }
 }
