@@ -1,4 +1,6 @@
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 
 class JuegoTest {
 
@@ -6,13 +8,19 @@ class JuegoTest {
     void nuevaPartida() {
         Juego j = new Juego();
         char[][] matrix = {{'-','-','-'}, {'-','-','-'}, {'-','-','-'}};
-        //Assertions.assertEquals(matrix,j.getTablero());
+
+        Assertions.assertArrayEquals(matrix,j.getTablero());
         Assertions.assertEquals(1, j.getTurno());
     }
 
-    @org.junit.jupiter.api.Test
+    @ParameterizedTest
+    @CsvSource({"'x','-','-','-','-','-','-','-','-'", "'-','x','-','-','-','-','-','-','-'", "'-','-','x','-','-','-','-','-','-'"})
     void jugar() {
         Juego j = new Juego();
-        //Assertions.assertEquals("x", j.getTablero());
+        char[][] expectedMatrix = {{'-','-','-'}, {'-','-','-'}, {'-','-','-'}};
+        char[][] actualMatrix = j.getTablero();
+
+        Assertions.assertArrayEquals(expectedMatrix, actualMatrix);
     }
+
 }
