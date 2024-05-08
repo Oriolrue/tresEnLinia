@@ -1,4 +1,6 @@
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 
 class JuegoTest {
 
@@ -11,11 +13,14 @@ class JuegoTest {
         Assertions.assertEquals(1, j.getTurno());
     }
 
-    @org.junit.jupiter.api.Test
+    @ParameterizedTest
+    @CsvSource({"'x','-','-','-','-','-','-','-','-'", "'-','x','-','-','-','-','-','-','-'", "'-','-','x','-','-','-','-','-','-'"})
     void jugar() {
         Juego j = new Juego();
-        char[][] matrix = {{'-','-','-'}, {'-','-','-'}, {'-','-','-'}};
-        //Hay que cambiar la prueba unitaria, en el expected poner la matriz y en el actual llamar a getTablero().
-        Assertions.assertEquals('x', matrix[0][0] = 'x');
+        char[][] expectedMatrix = {{'-','-','-'}, {'-','-','-'}, {'-','-','-'}};
+        char[][] actualMatrix = j.getTablero();
+
+        Assertions.assertArrayEquals(expectedMatrix, actualMatrix);
     }
+
 }
