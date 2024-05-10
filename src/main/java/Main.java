@@ -4,7 +4,9 @@ public class Main{
         TUI TUI = new TUI();
         Juego Juego = new Juego();
 
-        //TUI.mostrarMenu();
+        TUI.mostrarMenu();
+
+
 
         // aqui tiene que haber metodo nuevapartida() con un switch, que pida una nueva partida a "Juego"
         // pedimos tablero a juego y a tui le pedimos que muestre el tablero
