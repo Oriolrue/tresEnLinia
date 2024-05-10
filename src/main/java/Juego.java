@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Juego{
     Scanner sc = new Scanner(System.in);
 
-    private char[][] tablero = {{'-','-','-'},{'-','-','-'},{'-','-','-'}};
+    private char[][] tablero;
     private int turno;
 
     public char[][] getTablero() {return tablero;}
@@ -14,13 +14,16 @@ public class Juego{
         return turno;
     }
 
-    public void nuevaPartida(){
+    public Juego(){
+        this.tablero = new char[][]{{'-','-','-'},{'-','-','-'},{'-','-','-'}};
+        nuevaPartida();
+    }
 
+    public void nuevaPartida(){
         for (int i = 0; i < tablero.length; i++) {
             for (int j = 0; j < tablero.length; j++) {
-                System.out.print("[" + tablero[i][j] + "]");
+                tablero[i][j] = '-';
             }
-            System.out.println();
         }
         turno = 1;
     }
