@@ -1,10 +1,19 @@
+import com.sun.beans.editors.EnumEditor;
+
 public class Main{
     public static void main(String[] args) {
 
-        TUI t = new TUI();
+        TUI TUI = new TUI();
         Juego Juego = new Juego();
 
-        //t.mostrarMenu();
+
+        int opcion = TUI.mostrarMenu();
+
+        switch (opcion){
+            case 1:
+                Juego.nuevaPartida();
+                break;
+        }
 
 
         // aqui tiene que haber metodo nuevapartida() con un switch, que pida una nueva partida a "Juego"
