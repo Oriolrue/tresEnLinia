@@ -10,8 +10,8 @@ public class Juego{
 
     public char[][] getTablero() {return tablero;}
 
-    public int getTurno() {
-        return turno;
+    public short getTurno() {
+        return (short) turno;
     }
 
     public Juego(){
