@@ -32,5 +32,10 @@ public class Main{
 
     public static void nuevaPartida(){
         TUI.mostrarTablero(Juego.getTablero(), Juego.getTurno());
+        short jugada = TUI.recogerJugada();
+        int fila = jugada / 10;
+        int columna = jugada % 10;
+        Juego.jugar(fila,columna);
+        TUI.mostrarTablero(Juego.getTablero(), Juego.getTurno());
     }
 }

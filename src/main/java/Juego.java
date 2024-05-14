@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class Juego{
     Scanner sc = new Scanner(System.in);
 
-    private char[][] tablero;
+    private static char[][] tablero;
     private int turno;
 
-    public char[][] getTablero() {return tablero;}
+    public static char[][] getTablero() {return tablero;}
 
     public short getTurno() {
         return (short) turno;
@@ -28,7 +28,7 @@ public class Juego{
         turno = 1;
     }
     public static void jugar(int fila, int columna){
-
+        tablero[fila][columna] = 'x';
     }
     public static boolean jugadaGanadora(int fila, int columna){
         throw new NotImplementedException();
