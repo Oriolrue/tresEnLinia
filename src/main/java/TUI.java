@@ -9,7 +9,7 @@ public class TUI{
         System.out.println("Es el turno del jugador " + turno);
         for (int i = 0; i < tablero.length; i++) {
             for (int j = 0; j < tablero.length; j++) {
-                System.out.print(tablero[i][j] + " ");
+                System.out.print("[" + tablero[i][j] + "]");
             }
             System.out.println();
         }
@@ -35,8 +35,7 @@ public class TUI{
             case 1:
                 System.out.println(" ");
                 System.out.println("Se ha escogido nueva partida");
-
-                return 0;
+                break;
             case 2:
                  System.out.println(" ");
                  System.out.println("Se ha escogido cargar partida");
