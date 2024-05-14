@@ -10,12 +10,12 @@ public class Main{
             switch (opcion) {
                 case 1:
                     Main.nuevaPartida();
-                    break;
+                    return;
                 case 2:
                     // Load a saved game
                     break;
                 case 3:
-                    // Display configuration options
+                    // configuration options
                     break;
                 case 4:
                     return; // Exit the program
