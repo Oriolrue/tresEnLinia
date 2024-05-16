@@ -3,9 +3,9 @@ import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 import java.util.Scanner;
 
 public class TUI{
-    static Scanner sc = new Scanner(System.in);
+    Scanner sc = new Scanner(System.in);
 
-    public static void mostrarTablero(char[][] tablero, short turno){
+    public void mostrarTablero(char[][] tablero, short turno){
         System.out.println("Es el turno del jugador " + turno);
         for (int i = 0; i < tablero.length; i++) {
             for (int j = 0; j < tablero.length; j++) {
@@ -14,17 +14,17 @@ public class TUI{
             System.out.println();
         }
     }
-    public static short recogerJugada(){
+    public short recogerJugada(){
         System.out.println("Inserte a que casilla quiere hacer su jugada");
         int fila = sc.nextInt();
         int columna = sc.nextInt();
         return (short) (fila * 10 + columna);
     }
-    public static void finDePartida(short ganador){
+    public void finDePartida(short ganador){
         throw new NotImplementedException();
     }
 
-    public static int mostrarMenu(){
+    public int mostrarMenu(){
         System.out.println("Escoge una opción:");
         System.out.println(" ");
         System.out.println("1. Nueva partida");

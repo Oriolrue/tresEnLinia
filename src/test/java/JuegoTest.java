@@ -85,5 +85,11 @@ class JuegoTest {
 
         Assertions.assertEquals(expectedMatrix[2][2], actualMatrix[2][2]='x');
     }
+   /* @org.junit.jupiter.api.Test
+    void jugadaGanadora(){
+        Juego j = new Juego();
+        char[][] actualMatrix = j.getTablero();
+        Assertions.assertEquals(false, actualMatrix);
+    }*/
 
 }

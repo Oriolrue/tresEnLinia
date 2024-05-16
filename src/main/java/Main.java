@@ -9,7 +9,7 @@ public class Main{
 
             switch (opcion) {
                 case 1:
-                    Main.nuevaPartida();
+                    nuevaPartida();
                     return;
                 case 2:
                     // Load a saved game
