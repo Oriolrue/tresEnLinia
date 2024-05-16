@@ -15,7 +15,10 @@ public class TUI{
         }
     }
     public static short recogerJugada(){
-        throw new NotImplementedException();
+        System.out.println("Inserte a que casilla quiere hacer su jugada");
+        int fila = sc.nextInt();
+        int columna = sc.nextInt();
+        return (short) (fila * 10 + columna);
     }
     public static void finDePartida(short ganador){
         throw new NotImplementedException();
